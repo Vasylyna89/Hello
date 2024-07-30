@@ -1,5 +1,5 @@
 db.users.updateMany({
-   blocket: false,
+    is_blocket: {$ne: true},
    country: { $nin: ["France", "Germany"] }},
    {$inc: { balance: 100}}
 )
