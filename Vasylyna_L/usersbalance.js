@@ -4,5 +4,5 @@ db.users.find(
        country: { $nin: ["China", "France"]},
        balance: { $gt: 10, $lt: 1000 },
     },
-    { fullname: 1, _id: 0, balance: 1}
+    { fullname: 1, _id: 0, balance: 1, country: 1}
 )
