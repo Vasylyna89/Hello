@@ -1,6 +1,5 @@
-
 db.users.countDocuments(
-    {  is_blocked: { $ne: true },
+    {  is_blocked: true ,
         country: { $ne: 'China'},
        
     })
